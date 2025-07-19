@@ -10,7 +10,7 @@ void kernel_main() {
     irq_install();
     clear_screen();
 
-    kprint("\nmyOS Shell [kernel]\n"
+    kprint("\nlostOS Shell [kernel]\n"
         "Type END to halt the CPU\n\n> ");
 }
 
