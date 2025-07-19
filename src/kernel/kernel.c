@@ -36,13 +36,17 @@ void user_input(char *input) {
         kprint("OS Version: 1.0\n");
     } else if (strcmp(input, "WHOAMI") == 0) {
         kprint("user\n");
+    } else if (stwh(input, "ECHO ") == 1) {
+        kprint(input + 5);
+        kprint("\n");
     } else if (strcmp(input, "HELP") == 0) {
         kprint("Help Interface:\n"
             "   PAGE - First page: 0x10000, this command will produce a new address.\n"
-            "   CLEAR - Clears the screeen.\n"
-            "   VER - Shows OS version.\n"
-            "   WHOAMI - Shows user name.\n"
-            "   END - Halts the CPU.\n");
+            "   CLEAR/CLS - Clear the screeen.\n"
+            "   ECHO [text] - Prints the text.\n"
+            "   VER - Show OS version.\n"
+            "   WHOAMI - Show user name.\n"
+            "   END - Halt the CPU.\n");
     } else {
         kprint("No command: ");
         kprint(input);

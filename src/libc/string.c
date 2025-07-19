@@ -71,3 +71,10 @@ int strcmp(char s1[], char s2[]) {
     }
     return s1[i] - s2[i];
 }
+
+int stwh(const char *str, const char *prefix) {
+    while (*prefix) {
+        if (*prefix++ != *str++) return 0;
+    }
+    return 1;
+}
