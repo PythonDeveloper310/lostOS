@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+set -e
+
+export CC=/c/msys64/ucrt64/bin/i386-elf-gcc
+export LD=/c/msys64/ucrt64/bin/i386-elf-ld
+export ASM=nasm
+export VM=qemu-system-i386
+
+export BOOT=boot
+export CPU=cpu
+export KERNEL=kernel
+export DRIVERS=drivers
+export LIBC=libc
+export OUT=os-image.bin
+export OBJ_DIR=target/objs
+
+export C_SOURCES=$(find $KERNEL $DRIVERS $CPU $LIBC -name '*.c')
+export HEADERS=$(find $KERNEL $DRIVERS $CPU $LIBC -name '*.h')
+export ASM_SOURCES=$(find $BOOT $CPU -name '*.asm')
+export OBJ_FILES=""
+export CLEAN_DIR=""
+
+export CFLAGS=""
+export INCLUDE_FLAGS=""
+
+mkdir -p $OBJ_DIR
