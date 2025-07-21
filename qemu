@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-. ./tools/vars
-
-echo "Booting in QEMU ($VM)"
-$VM -drive if=floppy,format=raw,file=target/$OUT -full-screen
