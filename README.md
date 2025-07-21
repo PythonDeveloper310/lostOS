@@ -1,6 +1,6 @@
 # lostOS
-My first real operating system using C and Assembly. I use cfenollosa/os-tutorial to make this.
-I added my own commands too.
+My first real operating system using C and Assembly. I use github cfenollosa/os-tutorial to make this.
+I added other commands like ECHO, VER, CLEAR, WHOAMI.
 
 ## Please read this installation list or else you can't run the system! </br>
 
@@ -13,4 +13,4 @@ I added my own commands too.
 1) QEMU System.
 2) i386-elf Toolchain for Linux. <a href="https://github.com/nativeos/i386-elf-toolchain/releases">Download link here</a>
 
-Challenge: Try to run it without needing anyone's help.
+Challenge: Try to run it without any errors (No command: {command}).
