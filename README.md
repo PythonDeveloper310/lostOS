@@ -12,8 +12,3 @@ I added other commands like ECHO, VER, CLEAR, WHOAMI.
 ### For Linux user:
 1) QEMU System.
 2) i386-elf Toolchain for Linux. <a href="https://github.com/nativeos/i386-elf-toolchain/releases">Download link here</a>
-
-### For Mac user:
-I don't know.
-
-Challenge: Try to run it without errors like `bash: qemu-system-i386: command not found`, `bash: i386-elf-gcc: command not found` and so on.
